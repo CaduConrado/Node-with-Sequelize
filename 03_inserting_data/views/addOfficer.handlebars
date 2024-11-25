@@ -1,0 +1,24 @@
+ <nav id="navbar">
+    <ul>
+        <li><a href="/">Voltar</a></li>
+    </ul>
+</nav>
+
+<div class="addOfficer">
+    <h1>Adicione um Oficial</h1>
+    <form action="/officer/create" method="POST" class="form">
+        <div class="form-controll">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" placeholder="Informe o nome do Oficial">
+        </div>
+        <div class="form-controll">
+            <label for="Patente">Patente:</label>
+            <input type="text" name="rank" placeholder="Informe a patente">
+        </div>
+        <div class="form-checkbox">
+            <input type="checkbox" name="active">
+            <label for="active">Oficial Ativo?</label>
+        </div>
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>
