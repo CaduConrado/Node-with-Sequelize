@@ -22,6 +22,19 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/officer/showAll", async (req, res) => {
+  const officers = await Officer.findAll({ raw: true });
+  console.log(officers);
+
+  res.render("officers", { officers: officers });
+});
+
+app.get("/officer/details/:id", async (req, res) => {
+  const id = req.params.id;
+  const officer = await Officer.findOne({ raw: true, where: { id: id } });
+  res.render("officer", { officer });
+});
+
 app.get("/officer/create", (req, res) => {
   res.render("addOfficer");
 });

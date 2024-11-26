@@ -31,6 +31,8 @@
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    
 }
 
 #navbar ul {
@@ -57,6 +59,58 @@
     color: #FFC107; /* Dourado mais claro ao passar o mouse */
 }
 
+/*Estilização da pagina showAll
+/* Contêiner geral dos oficiais */
+.officers-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em uma coluna (um abaixo do outro) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaçamento entre os itens */
+    padding: 20px;
+    background-color: #2E4E2F; /* Verde oliva escuro */
+    border-radius: 10px;
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    width: 80%; /* Ajusta a largura do contêiner */
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+/* Estilização de cada item */
+.item {
+    background-color: #3B5D3F; /* Verde militar claro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; /* O item ocupa toda a largura do contêiner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    user-select: none; /* Impede a seleção de texto */
+}
+
+/* Estilização dos textos dentro de cada item */
+.item p {
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Nome do oficial */
+.item p:first-child {
+    font-size: 1.2em;
+    color: #FFD700; /* Destaque em dourado */
+}
+
+/* Patente do oficial */
+.item p:last-child {
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.item a{
+    font-size: 1em;
+    color: #FFD700;
+}
+
+
 
 /* Estilização do título */
 h1 {
@@ -66,6 +120,8 @@ h1 {
     margin-bottom: 20px;
     border-bottom: 2px solid #FFD700;
     padding-bottom: 10px;
+    user-select: none; /* Impede a seleção de texto */
+    pointer-events: none; /* Impede a interação com o cursor */
 }
 
 /* Estilização do botão */
@@ -76,7 +132,9 @@ h1 {
 }
 
 .action-link li {
-    display: inline-block; /* Garante que o botão fique sozinho */
+    display: block; /* Garante que o botão fique sozinho */
+    padding: 5px;
+    
 }
 
 .action-link a {
