@@ -24,7 +24,6 @@ app.get("/", (req, res) => {
 
 app.get("/officer/showAll", async (req, res) => {
   const officers = await Officer.findAll({ raw: true });
-  console.log(officers);
 
   res.render("officers", { officers: officers });
 });
