@@ -1,0 +1,29 @@
+<nav id="navbar">
+    <ul>
+        <li><a href="/">Voltar</a></li>
+    </ul>
+</nav>
+
+<div class="addOfficer">
+    <h1>Edição de Cadastro</h1>
+    <form action="/officer/update" method="POST" class="form">
+        <input type="hidden" name="id" value="{{officer.id}}">
+        <div class="form-controll">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" placeholder="Informe o nome do Oficial" value="{{officer.name}}">
+        </div>
+        <div class="form-controll">
+            <label for="Patente">Patente:</label>
+            <input type="text" name="rank" placeholder="Informe a patente" value="{{officer.rank}}">
+        </div>
+        <div class="form-checkbox">
+            {{#if officer.active}}
+                <input type="checkbox" name="active" checked>
+            {{else}}
+                <input type="checkbox" name="active">
+            {{/if}}
+            <label for="active">Oficial Ativo?</label>
+        </div>
+        <input type="submit" value="Cadastrar">
+    </form>
+</div>

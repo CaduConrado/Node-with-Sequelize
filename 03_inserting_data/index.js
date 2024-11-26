@@ -54,6 +54,42 @@ app.post("/officer/create", async (req, res) => {
   res.redirect("/");
 });
 
+app.post("/officer/delete/:id", async (req, res) => {
+  const id = req.params.id;
+
+  await Officer.destroy({ where: { id: id } });
+  res.redirect("/officer/showAll");
+});
+
+app.get("/officer/edit/:id", async (req, res) => {
+  const id = req.params.id;
+
+  const officer = await Officer.findOne({ raw: true, where: { id: id } });
+
+  res.render("officerEdit", { officer });
+});
+
+app.post("/officer/update", (req, res) => {
+  const id = req.body.id;
+  const name = req.body.name;
+  const rank = req.body.rank;
+  let active = req.body.active;
+  if (active === "on") {
+    active = true;
+  } else {
+    active = false;
+  }
+
+  const data = {
+    id,
+    name,
+    rank,
+    active,
+  };
+
+  Officer.update(data, { where: { id: id } });
+  res.redirect("/officer/showAll");
+});
 //condiciono a sincronização para a aplicação funcionar
 //a aplicação não funciona sem que as tabelas sejam criadas
 conn.sync().then(() => {

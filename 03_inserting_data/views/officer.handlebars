@@ -1,6 +1,6 @@
 <nav id="navbar">
     <ul>
-        <li><a href="/">Voltar</a></li>
+        <li><a href="/officer/showAll">Voltar</a></li>
     </ul>
 </nav>
 
@@ -10,5 +10,11 @@
     <div class="item">
         <p>{{officer.name}}</p>
         <p>{{officer.rank}}</p>
+        {{#if officer.active}}
+            <p>Ativo</p>
+        {{else }}
+            <p>Reserva</p>
+        {{/if}}
+        <a href="/officer/edit/{{officer.id}}">Editar</a>
     </div>
 </div>
