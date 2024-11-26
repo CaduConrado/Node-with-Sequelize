@@ -8,6 +8,9 @@
 <div class="officer-container">
     <h1>Detalhes do Oficial</h1>
     <div class="item">
+        <form action="/officer/delete/{{officer.id}}" method="POST" style="display: inline;">
+            <button type="submit" class="close-btn" aria-label="Fechar">&times;</button>
+        </form>
         <p>{{officer.name}}</p>
         <p>{{officer.rank}}</p>
         {{#if officer.active}}

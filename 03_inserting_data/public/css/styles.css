@@ -74,8 +74,39 @@
     max-width: 600px; /* Limita a largura máxima */
 }
 
+/* Estilização do botão de fechar */
+.close-btn {
+    position: absolute; /* Para posicionar em relação à div */
+    top: 10px; /* Distância do topo da div */
+    right: 10px; /* Distância da borda direita da div */
+    background-color: #3B5D3F; /* Fundo verde militar claro */
+    color: #FFD700; /* Texto dourado */
+    border: 1px solid #FFD700; /* Borda dourada */
+    font-size: 18px; /* Tamanho do "X" */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: bold; /* Negrito */
+    border-radius: 50%; /* Borda arredondada para o botão */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação */
+}
+
+/* Efeito ao passar o mouse */
+.close-btn:hover {
+    background-color: #FFD700; /* Altera para dourado */
+    color: #3B5D3F; /* Texto verde militar escuro */
+    transform: scale(1.1); /* Aumenta levemente */
+}
+
+
+
 /* Estilização de cada item */
 .item {
+    position: relative;
     background-color: #3B5D3F; /* Verde militar claro */
     color: #FFFFFF; /* Texto branco */
     padding: 15px;
