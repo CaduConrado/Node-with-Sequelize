@@ -10,7 +10,7 @@ const Arma = db.define("Arma", {
     required: true,
   },
 });
-
+Patron.hasOne(Arma);
 Arma.belongsTo(Patron);
 
 module.exports = Arma;

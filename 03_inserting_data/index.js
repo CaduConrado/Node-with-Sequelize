@@ -58,6 +58,12 @@ app.get("/arma/showAll", async (req, res) => {
   res.status(200).json(armas);
 });
 
+app.get("/arma/details/:id", async (req, res) => {
+  const id = req.params.id;
+  const arma = await Arma.findOne({ include: Patron, where: { id: id } });
+  res.status(200).json(arma.get({ plain: true }));
+});
+
 app.post("/officer/create", async (req, res) => {
   const name = req.body.name;
   const rank = req.body.rank;
