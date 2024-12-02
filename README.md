@@ -88,13 +88,13 @@ Tendo em vista o melhor entendimento do fluxo de funcionamento do projeto desenv
 
 ![Página Inicial](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/home.png)
 
-![Cadastro de Oficiais](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/cadaster.jpeg)
+![Cadastro de Oficiais](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/cadaster.png)
 
-![Consultando Todos os Cadastros](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/allOfficers.jpeg)
+![Consultando Todos os Cadastros](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/allOfficers.png)
 
-![Editando Cadastro](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerEdit.jpeg)
+![Editando Cadastro](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerEdit.png)
 
-![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.jpeg)
+![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.png)
 
 ## Estrutura do Projeto (Project Structure) ##
 
