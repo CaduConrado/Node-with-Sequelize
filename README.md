@@ -51,8 +51,6 @@ npm start
    index.js
    package-lock.json
    package.json
-   README.md
-   structure.txt
    
 +---controller
        ArmaController.js
@@ -88,15 +86,15 @@ npm start
 ## Exemplo (Example): ##
 Tendo em vista o melhor entendimento do fluxo de funcionamento do projeto desenvolvi este frontend para demonstrar a funcionalidade das rotas presentes em **routes/**. 
 
-![Página Inicial]()
+![Página Inicial](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/home.jpeg)
 
-![Cadastro de Oficiais]()
+![Cadastro de Oficiais](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/cadaster.jpeg)
 
-![Editando Cadastro]()
+![Consultando Todos os Cadastros](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/allOfficers.jpeg)
 
-![Consultando Todos os Cadastros]()
+![Editando Cadastro](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerEdit.jpeg)
 
-![Consultando Cadastro Específico]()
+![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.jpeg)
 
 ## Estrutura do Projeto (Project Structure) ##
 
