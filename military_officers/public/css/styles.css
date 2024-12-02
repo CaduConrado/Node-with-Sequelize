@@ -1,0 +1,269 @@
+/* Tema inspirado no Exército Brasileiro */
+
+.banner {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+    background-color: #2E4E2F; /* Verde oliva escuro */
+    color: #FFFFFF; /* Branco */
+    text-align: center;
+}
+
+.addOfficer{
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+    background-color: #2E4E2F; /* Verde oliva escuro */
+    color: #FFFFFF; /* Branco */
+    text-align: center;
+}
+
+/* Estilização da navbar no canto superior esquerdo */
+#navbar {
+    position: absolute; /* Posiciona a navbar fora do fluxo normal */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    background-color: #3B5D3F; /* Verde militar claro */
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    
+}
+
+#navbar ul {
+    list-style: none; /* Remove os marcadores */
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    display: inline; /* Alinha os itens horizontalmente */
+    margin-right: 15px; /* Espaçamento entre os itens */
+}
+
+#navbar a {
+    color: #FFD700; /* Dourado */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #FFC107; /* Dourado mais claro ao passar o mouse */
+}
+
+/*Estilização da pagina showAll
+/* Contêiner geral dos oficiais */
+.officers-container {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em uma coluna (um abaixo do outro) */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaçamento entre os itens */
+    padding: 20px;
+    background-color: #2E4E2F; /* Verde oliva escuro */
+    border-radius: 10px;
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    width: 80%; /* Ajusta a largura do contêiner */
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+/* Estilização do botão de fechar */
+.close-btn {
+    position: absolute; /* Para posicionar em relação à div */
+    top: 10px; /* Distância do topo da div */
+    right: 10px; /* Distância da borda direita da div */
+    background-color: #3B5D3F; /* Fundo verde militar claro */
+    color: #FFD700; /* Texto dourado */
+    border: 1px solid #FFD700; /* Borda dourada */
+    font-size: 18px; /* Tamanho do "X" */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: bold; /* Negrito */
+    border-radius: 50%; /* Borda arredondada para o botão */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    display: flex; /* Centraliza o conteúdo */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra do botão */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação */
+}
+
+/* Efeito ao passar o mouse */
+.close-btn:hover {
+    background-color: #FFD700; /* Altera para dourado */
+    color: #3B5D3F; /* Texto verde militar escuro */
+    transform: scale(1.1); /* Aumenta levemente */
+}
+
+
+
+/* Estilização de cada item */
+.item {
+    position: relative;
+    background-color: #3B5D3F; /* Verde militar claro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; /* O item ocupa toda a largura do contêiner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    user-select: none; /* Impede a seleção de texto */
+}
+
+/* Estilização dos textos dentro de cada item */
+.item p {
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Nome do oficial */
+.item p:first-child {
+    font-size: 1.2em;
+    color: #FFD700; /* Destaque em dourado */
+}
+
+/* Patente do oficial */
+.item p:last-child {
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.item a{
+    font-size: 1em;
+    color: #FFD700;
+}
+
+
+
+/* Estilização do título */
+h1 {
+    color: #FFD700; /* Dourado */
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+    user-select: none; /* Impede a seleção de texto */
+    pointer-events: none; /* Impede a interação com o cursor */
+}
+
+/* Estilização do botão */
+.action-link ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.action-link li {
+    display: block; /* Garante que o botão fique sozinho */
+    padding: 5px;
+    
+}
+
+.action-link a {
+    background-color: #FFD700; /* Dourado */
+    color: #2E4E2F; /* Verde oliva escuro */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.action-link a:hover {
+    background-color: #FFC107; /* Dourado mais claro */
+    color: #1D2B1F; /* Verde mais escuro */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2E4E2F; /* Verde oliva escuro */
+    color: #FFFFFF; /* Branco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #FFD700; /* Dourado */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.form {
+    background-color: #3B5D3F; /* Verde militar mais claro */
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-controll {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #FFD700; /* Dourado */
+    color: #2E4E2F; /* Verde oliva escuro */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFC107; /* Dourado mais claro */
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #888;
+}
