@@ -95,6 +95,11 @@ Tendo em vista o melhor entendimento do fluxo de funcionamento do projeto desenv
 ## Tela de Consulta de Todos Oficiais Cadastrados ##
 ![Consultando Todos os Cadastros](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/allOfficers.png)
 
+## Consultando Dados de um Oficial Específico ##
+![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.png)
+
+## Editando Cadastro de Oficial ##
+![Editando Cadastro](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerEdit.png)
 
 
 
