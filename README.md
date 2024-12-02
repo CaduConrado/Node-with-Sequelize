@@ -86,7 +86,7 @@ npm start
 ## Exemplo (Example): ##
 Tendo em vista o melhor entendimento do fluxo de funcionamento do projeto desenvolvi este frontend para demonstrar a funcionalidade das rotas presentes em **routes/**. 
 
-![Página Inicial](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/home.jpeg)
+![Página Inicial](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/home.png)
 
 ![Cadastro de Oficiais](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/cadaster.jpeg)
 
