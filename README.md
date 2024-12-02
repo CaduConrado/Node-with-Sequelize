@@ -86,15 +86,22 @@ npm start
 ## Exemplo (Example): ##
 Tendo em vista o melhor entendimento do fluxo de funcionamento do projeto desenvolvi este frontend para demonstrar a funcionalidade das rotas presentes em **routes/**. 
 
+# Tela Inicial #
 ![Página Inicial](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/home.png)
 
+# Tela de Cadastro #
 ![Cadastro de Oficiais](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/cadaster.png)
 
+# Tela de Consulta de Todos Oficiais Cadastrados #
 ![Consultando Todos os Cadastros](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/allOfficers.png)
 
+# Consultando Dados de um Oficial Específico #
+![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.png)
+
+# Editando Cadastro de Oficial #
 ![Editando Cadastro](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerEdit.png)
 
-![Consultando Cadastro Específico](https://github.com/CaduConrado/Node-with-Sequelize/blob/main/military_officers/assets/officerDetails.png)
+
 
 ## Estrutura do Projeto (Project Structure) ##
 
